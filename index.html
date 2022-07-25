@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai's Lieferando</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="img/fastfood_FILL0_wght400_GRAD0_opsz48.svg" alt="Logo">
+            <span>Kai's Lieferdienst</span>
+        </div>
+        <input type="text" placeholder="Straße eingeben...">
+        <img src="img/menu-outline.svg" alt="Menu">
+    </header>
+    <div class="headerSpace"></div>
+    <div class="container">
+        <div class="content">
+            <img class="bigImg" src="img/pexels-ella-olsson-1640777.jpg" alt="BigImg">
+            <div class="paddingLeft">
+                <h1>Kai's Restaurant</h1>
+                <div class="ratingStars marginBottom">
+                    <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg">
+                    <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg">
+                    <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg">
+                    <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg">
+                    <img src="img/star_half_FILL0_wght400_GRAD0_opsz48.svg">
+                    <span>(2,5k Bewertungen)</span>
+                </div>
+                <div class="infoBar marginBottom">
+                    <img src="img/clock.svg">
+                    <span>Ab 11:00 </span>
+                    <img src="img/motorcycle_FILL0_wght400_GRAD0_opsz48.svg">
+                    <span>1,20€</span>
+                    <img src="img/shopping_basket_FILL0_wght400_GRAD0_opsz48.svg">
+                    <span>min. 6,00€</span>
+                </div>
+                <div class="marginBottom grey">Mittagsmenü's gelten nicht an gesetzlichen Feiertagen.</div>
+            </div>
+            <div class="category marginBottom">
+                <img src="img/search_FILL0_wght400_GRAD0_opsz48.svg">
+                <span>Beliebte Gerichte</span>
+                <span>Mittagskarte</span>
+                <span>Suppen</span>
+                <span>Salate</span>
+                <span>Pizza</span>
+                <span>Pasta</span>
+                <span>Fleischgerichte</span>
+                <span>Gyros</span>
+            </div>
+            <div class="paddingLeft paddingRight">
+                <div class="favoriteDishes">
+                    <h2 class="dishesPadding">Beliebte Gerichte</h2>
+                </div>
+                <div class="menuBox dishesPadding">
+                    <h3>Pizza Margherita</h3>
+                    <p>Wähle aus: 28cm, 32cm, 40cm</p>
+                    <span>6,50€</span>
+                    <img onclick="addToBasket('Pizza Margherita', 6.50)" src="img/add_FILL0_wght400_GRAD0_opsz48.svg">
+                </div>
+                <div class="menuBox dishesPadding">
+                    <h3>Pizza Salami</h3>
+                    <p>Wähle aus: 28cm, 32cm, 40cm</p>
+                    <span>8,49€</span>
+                    <img onclick="addToBasket('Pizza Salami', 8.49)" src="img/add_FILL0_wght400_GRAD0_opsz48.svg">
+                </div>
+                <div class="menuBox dishesPadding">
+                    <h3>Cheeseburger</h3>
+                    <p>Wähle aus: 28cm, 32cm, 40cm</p>
+                    <span>9,99€</span>
+                    <img onclick="addToBasket('Cheeseburger', 9.99)" src="img/add_FILL0_wght400_GRAD0_opsz48.svg">
+                </div>
+            </div>
+        </div>
+        <div class="basket-container">
+            <h1>Warenkorb</h1>
+            <div class="basket" id="basket">
+                <img src="img/shopping_basket_FILL0_wght400_GRAD0_opsz48.svg" alt="Warenkorb">
+                <h2>Fülle deinen Warenkorb...</h2>
+                <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und Bestelle dein Essen.</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
